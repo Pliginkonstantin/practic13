@@ -8,29 +8,27 @@ namespace practic13_1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            int dayNumber = InputIntNumber("номер дня недели :");
-            OutStringMessage(GetName(dayNumber), "день недели: ");
+            string name = InputStringNumber(" первая буква предмета:");
+            OutStringMessage(GetName(name), "это : ");
             Console.Read();
         }
-        static int InputIntNumber(string message)
+        static string InputStringNumber(string message)
         {
             Console.Write(message);
-            return int.Parse(Console.ReadLine());
+            return Console.ReadLine();
         }
-        static string GetName(int dayNum)
+        static string GetName(string name)
         {
-            switch(dayNum)
+            switch(name.ToLower())
             {
-                case 1: return "понедельник";
-                case 2: return "вторник";
-                case 3: return "среда";
-                case 4: return "четверг";
-                case 5: return "пятница";
-                case 6: return "суббота";
-                case 7: return "восскресенье";
-                default: return "ошибка . значение не является номером дня недели";
+                case "ф": return "физика";
+                case "м": return "математика";
+                case "и": return "история";
+                case "г": return "география";
+                case "б": return "биология";
+                default: return "ошибка ";
             }
         }
         static void OutStringMessage(string message, string name)
