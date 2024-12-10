@@ -10,8 +10,8 @@ namespace practic13_1
     {
         static void Main(string[] args)
         {
-            int dayNumber = InputIntNumber("номер дня недели :");
-            OutStringMessage(GetName(dayNumber), "день недели: ");
+            int monthNumber = InputIntNumber("номер месяца :");
+            OutStringMessage(GetName(monthNumber), "это : ");
             Console.Read();
         }
         static int InputIntNumber(string message)
@@ -23,14 +23,19 @@ namespace practic13_1
         {
             switch(dayNum)
             {
-                case 1: return "понедельник";
-                case 2: return "вторник";
-                case 3: return "среда";
-                case 4: return "четверг";
-                case 5: return "пятница";
-                case 6: return "суббота";
-                case 7: return "восскресенье";
-                default: return "ошибка . значение не является номером дня недели";
+                case 1: return "январь , зима";
+                case 2: return "февраль , зима";
+                case 3: return "март , весна";
+                case 4: return "апрель , весна";
+                case 5: return "май , весна";
+                case 6: return "июнь , лето";
+                case 7: return "июль , лето";
+                case 8: return "август , лето";
+                case 9: return "сентябрь , осень";
+                case 10: return "октябрь , осень";
+                case 11: return "ноябрь , осень";
+                case 12: return "декабрь , зима";
+                default: return "ошибка ";
             }
         }
         static void OutStringMessage(string message, string name)
