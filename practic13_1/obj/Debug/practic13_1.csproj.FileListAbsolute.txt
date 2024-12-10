@@ -1,0 +1,7 @@
+D:\115\practic13_1\bin\Debug\practic13_1.exe.config
+D:\115\practic13_1\bin\Debug\practic13_1.exe
+D:\115\practic13_1\bin\Debug\practic13_1.pdb
+D:\115\practic13_1\obj\Debug\practic13_1.csproj.AssemblyReference.cache
+D:\115\practic13_1\obj\Debug\practic13_1.csproj.CoreCompileInputs.cache
+D:\115\practic13_1\obj\Debug\practic13_1.exe
+D:\115\practic13_1\obj\Debug\practic13_1.pdb
